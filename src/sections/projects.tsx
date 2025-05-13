@@ -6,7 +6,7 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import { CheckCircle } from "lucide-react"
-import { MotionSection } from "./motion-section"
+import { MotionSection } from "../components/motion-section"
 
 
 export const Projects = () => {

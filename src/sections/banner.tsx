@@ -1,9 +1,12 @@
+'use client'
+
 import Image from "next/image"
-import { Button } from "./ui/button"
-import { MotionSection } from "./motion-section"
-
+import { Button } from "../components/ui/button"
+import { MotionSection } from "../components/motion-section"
+import { useRouter } from "next/navigation"
+import ImageBanner from "../assets/images/home-image.jpg"
 export const Banner = () => {
-
+    const router = useRouter()
     return (
         <MotionSection id="home" className="px-5">
             <div className="flex items-center bg-primary w-full h-screen max-h-[600px]  rounded-sm">
@@ -17,7 +20,7 @@ export const Banner = () => {
                     <p className="text-white font-inter font-light leading-relaxed">
                         Desenvolvemos soluções tecnológicas inteligentes e personalizadas que conectam inovação, eficiência e resultados reais. Nosso objetivo é simplificar o complexo, acelerar processos e criar ferramentas digitais que realmente fazem a diferença para o seu negócio. Atuamos com foco em qualidade, segurança e evolução contínua para ajudar empresas a crescerem na era digital.
                     </p>
-                    <Button variant="secondary" className="w-1/2 mt-4 text-white">
+                    <Button onClick={() => { router.push("#contact") }} variant="secondary" className="w-1/2 mt-4 text-white cursor-pointer">
                         Entre em contato
                     </Button>
                 </div>
@@ -25,7 +28,7 @@ export const Banner = () => {
                 {/* Lado Direito */}
                 <div className=" flex w-full h-full justify-end">
                     <div className="relative h-full">
-                        <Image src="/home-image.jpg" width={900} height={590} alt="Banner" priority className="rounded-tr-sm"/>
+                        <Image src={ImageBanner} width={900} height={590} alt="Banner" priority className="rounded-tr-sm" />
                         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-l from-transparent to-primary"></div>
                     </div>
                 </div>

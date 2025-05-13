@@ -78,6 +78,10 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Inter
 }

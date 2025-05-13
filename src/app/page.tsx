@@ -1,9 +1,9 @@
-import { About } from "@/components/about";
-import { Banner } from "@/components/banner";
-import { Contact } from "@/components/contact";
+import { About } from "@/sections/about";
+import { Banner } from "@/sections/banner";
+import { Contact } from "@/sections/contact";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
-import { Projects } from "@/components/projects";
+import { Projects } from "@/sections/projects";
 
 export default function Home() {
   return (

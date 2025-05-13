@@ -1,6 +1,7 @@
 import { BrickWall, Cpu, Users } from "lucide-react"
 import Image from "next/image";
-import { MotionSection } from "./motion-section";
+import { MotionSection } from "../components/motion-section";
+import ImageAbout from "../assets/images/about.jpg"
 
 type CardProps = {
     title: string;
@@ -52,7 +53,7 @@ export const About = () => {
             <div className="flex justify-center items-center w-full px-20 py-10 gap-40">
                 {/* Imagem */}
                 <div>
-                    <Image src="/about.jpg" width={600} height={300} alt="Sobre nós" className="rounded-md" />
+                    <Image src={ImageAbout} width={600} height={300} alt="Sobre nós" className="rounded-md" />
                 </div>
                 {/* Cards */}
                 <div className="flex flex-col gap-10">

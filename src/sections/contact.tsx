@@ -1,7 +1,7 @@
 'use client'
 import { Mail, MapPinned, Phone } from "lucide-react";
-import { Button } from "./ui/button";
-import { MotionSection } from "./motion-section";
+import { Button } from "../components/ui/button";
+import { MotionSection } from "../components/motion-section";
 import { motion } from "motion/react";
 
 type CardProps = {
