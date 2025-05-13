@@ -1,7 +1,9 @@
 import { About } from "@/components/about";
 import { Banner } from "@/components/banner";
+import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { Projects } from "@/components/projects";
 
 export default function Home() {
   return (
@@ -11,8 +13,12 @@ export default function Home() {
         <main className="flex flex-col w-full h-full">
           <Banner />
           <About />
+          <Projects />
+          <Contact />
         </main>
-        <Footer />
+        <div className="w-full h-full p-5">
+          <Footer />
+        </div>
       </div>
     </>
   );

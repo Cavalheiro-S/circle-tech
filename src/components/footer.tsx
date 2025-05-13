@@ -3,7 +3,7 @@ import Link from "next/link"
 export const Footer = () => {
 
     return (
-        <footer className="flex justify-between items-center p-4 bg-primary text-zinc-700 px-20 w-full h-full font-poppins h-full">
+        <footer className="flex justify-between items-center p-4 bg-primary text-zinc-700 px-20 w-full h-full font-poppins rounded-sm">
             <div className="flex items-center">
                 <h1 className="text-xl font-bold text-white">Circle Tech</h1>
             </div>
