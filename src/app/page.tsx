@@ -8,7 +8,7 @@ import { Projects } from "@/sections/projects";
 export default function Home() {
   return (
     <>
-      <div className="grid grid-rows-[80px_1fr_200px] items-center bg-white justify-items-center min-h-screen font-inter overflow-x-hidden scroll-smooth">
+      <div className="flex flex-col md:grid md:grid-rows-[80px_1fr_200px] items-center bg-white justify-items-center min-h-screen font-inter overflow-x-hidden scroll-smooth">
         <Header />
         <main className="flex flex-col w-full h-full">
           <Banner />
@@ -16,9 +16,7 @@ export default function Home() {
           <Projects />
           <Contact />
         </main>
-        <div className="w-full h-full p-5">
           <Footer />
-        </div>
       </div>
     </>
   );

@@ -31,9 +31,9 @@ export const About = () => {
     const renderCard = ({ title, description, icon }: CardProps, index: number) => {
 
         return (
-            <div className="flex items-center gap-6" key={index}>
+            <div className="flex flex-col md:flex-row items-center gap-6" key={index}>
                 {icon}
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-2 text-center md:text-left">
                     <span className="text-zinc-700 font-semibold font-poppins">{title}</span>
                     <p className="text-sm text-gray-500 font-inter leading-6 max-w-xl">
                         {description}
@@ -45,16 +45,14 @@ export const About = () => {
     return (
         <MotionSection id="about" className="flex flex-col items-center justify-center w-full h-full bg-white text-zinc-700 font-poppins gap-2 mt-10">
             <h2 className="text-center text-zinc-800 font-semibold">Quem Somos</h2>
-            <span className="font-semibold text-xl">A SOLUÇÃO COMPLETA PARA SEU NEGÓCIO</span>
+            <span className="font-semibold text-xl text-center md:text-left">A SOLUÇÃO COMPLETA PARA SEU NEGÓCIO</span>
             <p className="text-sm text-gray-500 font-inter leading-6 text-center max-w-2xl">
                 Somos uma empresa de tecnologia especializada em desenvolvimento de software e soluções em inteligência artificial. Atuamos com foco em atender as necessidades do setor público e de grandes organizações, oferecendo sistemas robustos, seguros e sob medida.
             </p>
 
-            <div className="flex justify-center items-center w-full px-20 py-10 gap-40">
+            <div className="flex flex-col xl:flex-row justify-center items-center w-full px-2 md:px-20 py-10 gap-10 2xl:gap-40">
                 {/* Imagem */}
-                <div>
-                    <Image src={ImageAbout} width={600} height={300} alt="Sobre nós" className="rounded-md" />
-                </div>
+                <Image src={ImageAbout} alt="Sobre nós" className="rounded-md max-w-md w-full" />
                 {/* Cards */}
                 <div className="flex flex-col gap-10">
                     {cards.map(renderCard)}

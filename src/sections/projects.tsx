@@ -37,9 +37,9 @@ export const Projects = () => {
                 <h2 className="text-center text-lg font-semibold">O que nós fazemos por você</h2>
             </div>
 
-            <div className="flex w-full h-full px-20 my-10 flex-wrap gap-4 justify-center">
+            <div className="flex w-full h-full px-2 md:px-20 my-10 flex-wrap gap-4 justify-center">
                 {cards?.map((card, index) => (
-                    <div key={index} className="flex flex-col gap-2 rounded-sm basis-1/4 justify-center bg-white border-2 p-4 min-h-96">
+                    <div key={index} className="flex flex-col gap-2 rounded-sm md:basis-1/3 xl:basis-1/4 justify-center bg-white border-2 p-4 min-h-96">
                         {card.icon}
                         <div className="flex flex-col gap-2">
                             <h3 className="text-zinc-700 text-lg font-semibold font-poppins text-center">{card.title}</h3>

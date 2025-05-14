@@ -14,7 +14,7 @@ const cards = [
     {
         title: "Nossa localização",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        icon: <MapPinned size={64} className="text-zinc-700" />,
+        icon: <MapPinned size={48   } className="text-zinc-700" />,
     },
     {
         title: "Telefone",
@@ -54,7 +54,9 @@ export const Contact = () => {
 
         return (
             <div className="flex items-center gap-6" key={index}>
-                {icon}
+                <div className="w-16 h-16">
+                    {icon}
+                </div>
                 <div className="flex flex-col gap-2">
                     <span className="text-zinc-700 font-semibold font-poppins">{title}</span>
                     <p className="text-sm text-gray-500 font-inter leading-6 max-w-xl">
@@ -68,15 +70,15 @@ export const Contact = () => {
     return (
         <MotionSection id="contact" className="flex flex-col items-center justify-center w-full h-full bg-white text-zinc-700 font-poppins gap-2 mt-10">
             <h2 className="text-center text-zinc-800 font-semibold">Contato</h2>
-            <span className="font-semibold text-xl">Estamos prontos para ajudar você</span>
+            <span className="font-semibold text-xl px-2">Estamos prontos para ajudar você</span>
             <p className="text-sm text-gray-500 font-inter leading-6 text-center max-w-2xl">
                 Se você está pronto para transformar sua empresa com soluções tecnológicas inovadoras, entre em contato conosco. Nossa equipe está pronta para entender suas necessidades e apresentar a melhor solução para o seu negócio.
             </p>
 
             {/* content */}
-            <div className="flex my-10">
-                <motion.div variants={variantsMessage} className="flex flex-col justify-center items-center w-full px-20 py-10 gap-10">
-                    <h3 className="text-3xl">Entre em contato agora mesmo</h3>
+            <div className="flex flex-col md:flex-row my-10 px-2">
+                <motion.div variants={variantsMessage} className="flex flex-col justify-center items-center w-full px-2 md:px-20 py-10 gap-10">
+                    <h3 className="text-3xl text-center md:text-left">Entre em contato agora mesmo</h3>
                     <div className="flex flex-col gap-10">
                         {cards.map(renderCard)}
                     </div>
