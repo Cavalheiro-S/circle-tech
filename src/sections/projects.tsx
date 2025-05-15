@@ -1,11 +1,11 @@
-import { BrainCog, FileDigit, FolderCode, ShieldCheck } from "lucide-react"
+import { BrainCog, FileCode, FileDigit, FolderCode, ShieldCheck } from "lucide-react"
 import { MotionSection } from "../components/motion-section"
 
 
 export const Projects = () => {
     const cards = [
         {
-            icon: <FolderCode className="text-secondary w-14 h-14 self-center mb-2" />,
+            icon: <FileCode className="text-secondary w-14 h-14 self-center mb-2" />,
             title: "Desenvolvimento de Software Sob Medida",
             description: "Criamos sistemas personalizados de alta performance, projetados para atender às necessidades específicas de cada cliente. Atuamos em todas as etapas do ciclo de desenvolvimento : Levantamento de requisitos, Desenho de arquitetura, Desenvolvimento, Testes, Implantação, Suporte e manutenção"
         },
