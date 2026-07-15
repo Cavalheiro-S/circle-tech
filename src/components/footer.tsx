@@ -16,6 +16,7 @@ export const Footer = () => {
                     <Link href="#home" className="hover:text-gray-400 font-semibold text-sm">Quem Somos</Link>
                     <Link href="#about" className="hover:text-gray-400 font-semibold text-sm">Soluções</Link>
                     <Link href="#contact" className="hover:text-gray-400 font-semibold text-sm">Contato</Link>
+                    <Link href="/privacidade/" className="hover:text-gray-400 font-semibold text-sm">Política de Privacidade</Link>
                 </nav>
             </footer>
         </div>
